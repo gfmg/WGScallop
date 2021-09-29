@@ -32,11 +32,9 @@ library(raster)
 library(ggplot2)
 
 #Directories
-dataDir<-file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/Stock_Assessment/SCA/",
-                   "WGScallop_IrishSeaKing/Data")
-gisDir<-file.path(dataDir,"GIS")
-spatialdir<-file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/",
-                      "Common_R/geoData")
+dataDir<-file.path("")
+gisDir<-file.path(dataDir,"")
+spatialdir<-file.path("")
 
 #Common proj
 projWGS84 <- CRS("+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
@@ -101,8 +99,7 @@ region_extent <- ahull(iom09[!duplicated(paste(iom09$lon, iom09$lat)),c("lon","l
 
 #Transform ahull to SpatialLines and then to spatial polygon. Code from lib
 ## Load functions and packages:
-source(file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/Stock_Assessment/SCA/",
-                 "WGScallop_IrishSeaKing/lib/ahull2poly.R"))
+source(file.path("/ahull2poly.R"))
 sps <- ahull2poly(region_extent)
 proj4string(sps)<- CRS("+proj=longlat +datum=WGS84")
 

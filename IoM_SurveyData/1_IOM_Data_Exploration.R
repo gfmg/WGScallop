@@ -16,10 +16,9 @@ library(raster)
 library(rgdal)
 
 
-dataDir<-file.path("./Data")
+dataDir<-file.path("")
 
-spatialdir<-file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/",
-                      "Common_R/geoData")
+spatialdir<-file.path("")
 
 #Common proj
 projWGS84 <- CRS("+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")

@@ -23,11 +23,9 @@ library(effects)  # Used to visualize covariate effects
 library(colorRamps)
 library(stringr)
 
-dataDir<-file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/Stock_Assessment/",
-                   "SCA/WGScallop_IrishSeaKing/Data")
+dataDir<-file.path("")
 
-spatialdir<-file.path("C:/Users/ggonzales/Desktop/gmartin_work_folder/",
-                      "Common_R/geoData")
+spatialdir<-file.path("")
 gisDir<-file.path(dataDir,"GIS")
 
 #Common proj
